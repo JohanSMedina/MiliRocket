@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateParticipantDescription(participantName) {
     switch (participantName) {
       case "Andres Baez":
-        participantDescription.textContent = "Descripción de Andres Baez";
+        participantDescription.textContent = "Soy un estudiante que se encuentra en el último semestre de la carrera de Ingeniería Mecatrónica en la Universidad Militar Nueva Granada (UMNG). Formo parte del equipo especializado en control y electrónica. Mi labor es una fuente de pasión y dedicación, respaldada por un sólido conocimiento en áreas clave, tales como programación y diseño asistido por computadora (CAD).";
         break;
       case "Johan Medina":
         participantDescription.textContent = "Se encuentra en el último semestre de la carrera de Ingeniería Mecatrónica en la UMNG. Ocupa el rol de líder en el área de mecánica y contribuye activamente en el equipo de tecnología de la información (TI). Su entusiasmo y pasión se centran en la programación y el desarrollo de software";
