@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to top, #999999, #ffffff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+a, h1, h2,h5, p{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Spline Sans Mono', monospace;   
+}
+
+footer {
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-caption h5 {
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 10px;
+}
+
+.gray-background-title {
+    width: 200px;
+    background-color: gray;
+    color: white; /* Cambia el color del texto si es necesario para mejorar la legibilidad */
+    padding: 10px; /* Agrega un relleno para separar el texto del fondo */
+}
+
+
+
+
+@media screen and (min-height: 600px) {
+    footer {
+        position: static;
+    }
+}
