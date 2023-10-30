@@ -32,6 +32,11 @@ footer {
     padding: 10px; /* Agrega un relleno para separar el texto del fondo */
 }
 
+.img-carousel {
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+}
 
 
 
