@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         participantDescription.textContent = "Descripción de Jose Lopez";
         break;
       case "Juan Hernandez":
-        participantDescription.textContent = "Descripción de Juan Hernandez";
+        participantDescription.textContent = "Docente del programa de ingeniería mecatrónica, encargado de liderar al equipo y apoyar en los temas de diseño, ingeniería y manufactura para el desarrollo e implementación del sistema mecatrónico.";
         break;
       case "Laura Ajiaco":
         participantDescription.textContent = "Descripción de Laura Ajiaco";
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
       case "Sebastian Cruz":
         participantDescription.textContent = "Descripción de Sebastian Cruz";
         break;
-      // Agrega más casos para otros participantes según sea necesario
       default:
         participantDescription.textContent =
           "Descripción de participante no encontrada";
