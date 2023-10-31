@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MiliRocket VTE</title>
-    
-     <!-- Estilos -->
-     <link rel="icon" href="/deploy/img/logos/logoMilirocket_SinLetra.png">
-     <link rel="stylesheet" href="styles.css" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
- 
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito+Sans:opsz,wght@6..12,300&family=Spline+Sans+Mono:wght@300&display=swap"
-         rel="stylesheet" />
-     <script src="/deploy/js/carousel-description.js"></script>    
-    
+
+    <!-- Estilos -->
+    <link rel="icon" href="img/logos/logoMilirocket_SinLetra.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito+Sans:opsz,wght@6..12,300&family=Spline+Sans+Mono:wght@300&display=swap"
+        rel="stylesheet" />
+
+
+    <script type="module" src="js/firebaseconect.js"></script>
+    <script type="module" src="js/login.js"></script>
+
 </head>
+
 <body>
 
     <!-- Inicia Nav Bar -->
@@ -27,36 +32,42 @@
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
-                <img src="/deploy/img/logos/logoMilirocket_SinLetra.png" alt="Logo_MiliRocket" width="80" height="43" class="d-inline-block align-text-top">
+                <img src="img/logos/logoMilirocket_SinLetra.png" alt="Logo_MiliRocket" width="80" height="43"
+                    class="d-inline-block align-text-top">
             </a>
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link m-2 fs-3 fw-bold" aria-current="page" href="index.html">MiliRocket</a>
                     <a class="nav-link m-2 fs-5 fw-bold" href="quienesSomos.html">¿Quiénes somos?</a>
-                    <a class ="nav-link m-2 fs-5 fw-bold" href="manufactura.html">Manufactura</a>
+                    <a class="nav-link m-2 fs-5 fw-bold" href="manufactura.html">Manufactura</a>
                     <a class="nav-link m-2 fs-5 fw-bold" href="pruebasRealizadas.html">Pruebas Realizadas</a>
                     <li class="nav-item dropdown m-2 fs-5 fw-bold">
-                        <a class="nav-link dropdown-toggle" href="#" id="redesSocialesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="redesSocialesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Redes Sociales
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="redesSocialesDropdown">
                             <li>
-                                <a class="dropdown-item" href="https://www.instagram.com/milirocket_vte/">Instagram</a>
+                                <a class="dropdown-item" href="https://www.instagram.com/milirocket_vte/"
+                                    target="_blank">Instagram</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="https://www.tiktok.com/@milirocket_vte">TikTok</a>
+                                <a class="dropdown-item" href="https://www.tiktok.com/@milirocket_vte"
+                                    target="_blank">TikTok</a>
                             </li>
                         </ul>
                     </li>
                 </div>
                 <div class="ms-auto">
                     <div class="d-flex">
-                        <a class="nav-link ms-4" href="#">Inicia Sesión</a>
+                        <a class="nav-link ms-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#inicioSesionModal">Inicia Sesión</a>
                         <a class="nav-link ms-4" href="#">Regístrate</a>
                     </div>
                 </div>
@@ -73,58 +84,88 @@
 
     <!-- Contenido -->
     <div class="container" style="margin-top: 100px; margin-bottom: 50px; height: 475px"">
-        <div class="row">
-            <div class="col-md-6" >
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/deploy/img/logos/logoMilirocket.png" alt="Logo_MiliRocket" class="img-fluid" style="width: 80%; height: auto;">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="Imagen_Todos">
-                      </div>
+        <div class=" row">
+        <div class="col-md-6">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/logos/logoMilirocket.png" alt="Logo_MiliRocket" class="img-fluid"
+                            style="width: 80%; height: auto;">
                     </div>
-                  </div>
-                
+                    <div class="carousel-item">
+                        <img src="img/logos/logoMilirocket_SinLetra.png" class="d-block w-100" alt="Imagen_Todos">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <p>
-                    💥🚀 Bienvenidos a la página oficial de MiliRocket el vehículo de tracción eléctrica (VTE) de la Universidad Militar Nueva Granada 2023-1.<br>
-                    Aquí podrás ver toda la información relacionada con nuestro VTE, así como de los integrantes que conforman al equipo encargado de hacer de este sueño una realidad. También tenemos una galería de imágenes para que puedas ver el proceso de diseño y fabricación de las diferentes áreas que conforman el vehículo. 🤖🦾<br><br>
-                </p>
-                <p>
-                    Somos un equipo compuesto por estudiantes de ingeniería mecatrónica de la Universidad Militar Nueva Granada que hemos diseñado, fabricado y construido este vehículo de tracción eléctrica desde cero. 🏎👩‍🔧                    <br><br>
-                    Síguenos para conocer cómo fue nuestro viaje por todo este mundo de la ingeniería y la movilidad eléctrica. 🔌<br><br>
-                </p>
-            </div>
+
         </div>
+        <div class="col-md-6">
+            <p>
+                💥🚀 Bienvenidos a la página oficial de MiliRocket el vehículo de tracción eléctrica (VTE) de la Universidad Militar Nueva Granada 2023-1.<br>
+                Aquí podrás ver toda la información relacionada con nuestro VTE, así como de los integrantes que conforman al equipo encargado de hacer de este sueño una realidad. También tenemos una galería de imágenes para que puedas ver el proceso de diseño y fabricación de las diferentes áreas que conforman el vehículo. 🤖🦾<br><br>
+            </p>
+            <p>
+                Somos un equipo compuesto por estudiantes de ingeniería mecatrónica de la Universidad Militar Nueva Granada que hemos diseñado, fabricado y construido este vehículo de tracción eléctrica desde cero. 🏎👩‍🔧 <br><br>
+                Síguenos para conocer cómo fue nuestro viaje por todo este mundo de la ingeniería y la movilidad eléctrica. 🔌<br><br>
+            </p>
+        </div>
+    </div>
 
     </div>
     <!-- Fin Contenido -->
 
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2023 MiliRocket VTE</p>
-                    <p>Contáctanos: milirocket.team@gmail.com</p>
-                    <p>Dirección: Cra. 11 #101-80, Bogotá, Colombia</p>
-                    <p>Facultad de Ingeniería UMNG, Ingeniería Mecatrónica</p>
+    <!-- Modal -->
+    <div class="modal fade" id="inicioSesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de Sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-md-6">
-                    <p>Síguenos en redes sociales:</p>
-                    <a href="https://www.instagram.com/milirocket_vte/" class="text-light">Instagram</a><br>
-                    <a href="https://www.tiktok.com/@milirocket_vte" class="text-light">TikTok</a>
+
+                <div class="modal-body">
+                    <form id="inicioSesion">
+                        <div class="form-group" style="margin-top: 5px;">
+                            <input type="email" id="email" class="form-control" placeholder="email">
+                        </div>
+                        <div class="form-group" style="margin-top: 5px;">
+                            <input type="password" id="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group" style="margin-top: 5px;">
+                            <button type="submit" class="btn btn-primary" style="margin-top: 5px;">Iniciar</button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <!--FIN MODAL-->
+
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+        // Cargar el footer desde un archivo externo
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error(error));
+    </script>
     <!-- Fin Footer -->
 
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!--Fin Boostrap-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
