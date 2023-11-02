@@ -4,6 +4,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase
 import { getDatabase, ref, get, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
     apiKey: "AIzaSyCKJh6nG5BeYBxLFaQdCQ4--h9liPqVoz4",
     authDomain: "vteumilitar.firebaseapp.com",
@@ -17,13 +18,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth;
-
 export class ManageAccount {
     register(email, password) {
-        createUserWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth(), email, password)
             .then((_) => {
-                //window.location.href = "login.html";
-                alert("Registro exitoso")
+                alert("Registro exitoso");
             })
             .catch((error) => {
                 console.error(error.message);
@@ -31,26 +30,24 @@ export class ManageAccount {
             });
     }
 
-    autheticate(email, password) {
-        singWithEmailAndPassword(auth, email, password
+    authenticate(email, password) {
+        signInWithEmailAndPassword(auth(), email, password)
             .then(() => {
-                //window.location.href = "index.html";
-                alert("Inicio de sesion exitoso");
+                console.log("Inicio de sesión exitoso");
             })
             .catch((error) => {
                 console.error(error.message);
-                alert("Error al Iniciar sesion: " + error.message);
-            })
-        )
+                console.log("Error al iniciar sesión: " + error.message);
+            });
     }
 
-    singOut() {
-        singOut(auth)
+    signOut() {
+        signOut(auth())
             .then((_) => {
-                //window.location.href = "index.html";
+                console.log("Sesión cerrada");
             })
             .catch((error) => {
                 console.error(error.message);
-            })
+            });
     }
 }

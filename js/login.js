@@ -1,4 +1,5 @@
-import  {ManageAcount} from './firebaseconect';
+import { ManageAccount } from './firebaseconect.js';
+
 
 const inicioSecion = document.querySelector('#inicioSesion');
 

@@ -7,3 +7,4 @@ inicioSecion.addEventListener('submit', (e)=>{
 
     console.log(email, password)
 })
+
